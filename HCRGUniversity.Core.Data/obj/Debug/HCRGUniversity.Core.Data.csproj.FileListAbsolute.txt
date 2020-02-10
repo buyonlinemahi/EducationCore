@@ -1,0 +1,12 @@
+D:\Mahi_TFS\Education\Core\HCRGUniversityCore\HCRGUniversity.Core.Data\bin\Debug\HCRGUniversity.Core.Data.dll
+D:\Mahi_TFS\Education\Core\HCRGUniversityCore\HCRGUniversity.Core.Data\bin\Debug\HCRGUniversity.Core.Data.pdb
+D:\Mahi_TFS\Education\Core\HCRGUniversityCore\HCRGUniversity.Core.Data\bin\Debug\Core.Base.Data.dll
+D:\Mahi_TFS\Education\Core\HCRGUniversityCore\HCRGUniversity.Core.Data\bin\Debug\HCRGUniversity.Core.BL.Model.dll
+D:\Mahi_TFS\Education\Core\HCRGUniversityCore\HCRGUniversity.Core.Data\bin\Debug\HCRGUniversity.Core.Data.Model.dll
+D:\Mahi_TFS\Education\Core\HCRGUniversityCore\HCRGUniversity.Core.Data\bin\Debug\EntityFramework.dll
+D:\Mahi_TFS\Education\Core\HCRGUniversityCore\HCRGUniversity.Core.Data\bin\Debug\Core.Base.Data.pdb
+D:\Mahi_TFS\Education\Core\HCRGUniversityCore\HCRGUniversity.Core.Data\bin\Debug\HCRGUniversity.Core.BL.Model.pdb
+D:\Mahi_TFS\Education\Core\HCRGUniversityCore\HCRGUniversity.Core.Data\bin\Debug\HCRGUniversity.Core.Data.Model.pdb
+D:\Mahi_TFS\Education\Core\HCRGUniversityCore\HCRGUniversity.Core.Data\obj\Debug\HCRGUniversity.Core.Data.csprojResolveAssemblyReference.cache
+D:\Mahi_TFS\Education\Core\HCRGUniversityCore\HCRGUniversity.Core.Data\obj\Debug\HCRGUniversity.Core.Data.dll
+D:\Mahi_TFS\Education\Core\HCRGUniversityCore\HCRGUniversity.Core.Data\obj\Debug\HCRGUniversity.Core.Data.pdb

@@ -1,0 +1,4 @@
+D:\Mahi_TFS\Education\Core\HCRGUniversityCore\HCRGUniversity.Core.Data.Model\bin\Debug\HCRGUniversity.Core.Data.Model.dll
+D:\Mahi_TFS\Education\Core\HCRGUniversityCore\HCRGUniversity.Core.Data.Model\bin\Debug\HCRGUniversity.Core.Data.Model.pdb
+D:\Mahi_TFS\Education\Core\HCRGUniversityCore\HCRGUniversity.Core.Data.Model\obj\Debug\HCRGUniversity.Core.Data.Model.dll
+D:\Mahi_TFS\Education\Core\HCRGUniversityCore\HCRGUniversity.Core.Data.Model\obj\Debug\HCRGUniversity.Core.Data.Model.pdb

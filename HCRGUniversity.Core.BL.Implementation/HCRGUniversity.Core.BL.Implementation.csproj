@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5EA47FD8-2869-4D6C-95EF-D41D65E2D609}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HCRGUniversity.Core.BL.Implementation</RootNamespace>
+    <AssemblyName>HCRGUniversity.Core.BL.Implementation</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Library\External\EntityFramework\6.0\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Omu.ValueInjecter">
+      <HintPath>..\..\..\..\Library\External\ValueInjecter\2.1\Omu.ValueInjecter.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutUsImpl.cs" />
+    <Compile Include="BillingAddressImpl.cs" />
+    <Compile Include="CarouselSetUpImpl.cs" />
+    <Compile Include="CertificationTitleOptionImpl.cs" />
+    <Compile Include="CollegeImpl.cs" />
+    <Compile Include="OrganizationContactImpl.cs" />
+    <Compile Include="ClientTypeImpl.cs" />
+    <Compile Include="DiscountCouponImpl.cs" />
+    <Compile Include="EducationCredentialImpl.cs" />
+    <Compile Include="EducationFormatAvialableImpl.cs" />
+    <Compile Include="EducationFormatImpl.cs" />
+    <Compile Include="EducationImpl.cs" />
+    <Compile Include="EducationModuleFileImpl.cs" />
+    <Compile Include="EducationModuleImpl.cs" />
+    <Compile Include="EducationProfessionImpl.cs" />
+    <Compile Include="EducationShoppingImpl.cs" />
+    <Compile Include="EducationShoppingTempImpl.cs" />
+    <Compile Include="Engine\CourseCompleteProcessEngine.cs" />
+    <Compile Include="EnterpriseImpl.cs" />
+    <Compile Include="ExamInternalImpl.cs" />
+    <Compile Include="ExamQuestionImpl.cs" />
+    <Compile Include="FacultyImpl.cs" />
+    <Compile Include="FAQImpl.cs" />
+    <Compile Include="FileTypeImpl.cs" />
+    <Compile Include="Global\GlobalConst.cs" />
+    <Compile Include="IndustryImpl.cs" />
+    <Compile Include="LogSessionImpl.cs" />
+    <Compile Include="MenuImpl.cs" />
+    <Compile Include="MyEducationImpl.cs" />
+    <Compile Include="NewsImpl.cs" />
+    <Compile Include="NewsPhotoImpl.cs" />
+    <Compile Include="NewsSectionImpl.cs" />
+    <Compile Include="NewsVideoImpl.cs" />
+    <Compile Include="ClientImpl.cs" />
+    <Compile Include="OrganizationImpl.cs" />
+    <Compile Include="PlanImpl.cs" />
+    <Compile Include="ProductImpl.cs" />
+    <Compile Include="ProductShippingDetailImpl.cs" />
+    <Compile Include="ProfessionImpl.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResourceImpl.cs" />
+    <Compile Include="ShippingAddressImpl.cs" />
+    <Compile Include="ShippingMethodImpl.cs" />
+    <Compile Include="ShippingPaymentImpl.cs" />
+    <Compile Include="StateImpl.cs" />
+    <Compile Include="SuggestCourseImpl.cs" />
+    <Compile Include="UserAllAccessPassImpl.cs" />
+    <Compile Include="UserCardDetailImpl.cs" />
+    <Compile Include="EnterprisePackageRegisterImpl.cs" />
+    <Compile Include="UserImpl.cs" />
+    <Compile Include="UserSubscriptionImpl.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core.Base.Data.SqlServer\Core.Base.Data.SqlServer.csproj">
+      <Project>{d6028b67-70fb-4960-99c8-e4e69923be4e}</Project>
+      <Name>Core.Base.Data.SqlServer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Core.Base.Data\Core.Base.Data.csproj">
+      <Project>{dcd06438-4464-466e-851e-946bbe672694}</Project>
+      <Name>Core.Base.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HCRGUniversity.Core.BL.Model\HCRGUniversity.Core.BL.Model.csproj">
+      <Project>{02c07b1b-b924-4bb2-81ff-77f7657254db}</Project>
+      <Name>HCRGUniversity.Core.BL.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HCRGUniversity.Core.BL\HCRGUniversity.Core.BL.csproj">
+      <Project>{52b0cd4b-1ba7-4b95-8b1f-6ca74d51711b}</Project>
+      <Name>HCRGUniversity.Core.BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HCRGUniversity.Core.Data.Model\HCRGUniversity.Core.Data.Model.csproj">
+      <Project>{5623fb8d-3d06-4b24-b332-48f268bcbb13}</Project>
+      <Name>HCRGUniversity.Core.Data.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HCRGUniversity.Core.Data.SqlServer\HCRGUniversity.Core.Data.SqlServer.csproj">
+      <Project>{cd39f831-6aeb-4321-89aa-463da7939581}</Project>
+      <Name>HCRGUniversity.Core.Data.SqlServer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HCRGUniversity.Core.Data\HCRGUniversity.Core.Data.csproj">
+      <Project>{f5eae2b1-5650-4564-b3b3-f2d1f17f9c41}</Project>
+      <Name>HCRGUniversity.Core.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

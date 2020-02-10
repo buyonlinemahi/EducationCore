@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{02C07B1B-B924-4BB2-81FF-77F7657254DB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HCRGUniversity.Core.BL.Model</RootNamespace>
+    <AssemblyName>HCRGUniversity.Core.BL.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs" />
+    <Compile Include="Accreditation.cs" />
+    <Compile Include="Accreditor.cs" />
+    <Compile Include="Base\BaseColumn.cs" />
+    <Compile Include="Base\BasePaged.cs" />
+    <Compile Include="CarouselSetUp.cs" />
+    <Compile Include="Certification.cs" />
+    <Compile Include="CertificationTitleOption.cs" />
+    <Compile Include="Client.cs" />
+    <Compile Include="College.cs" />
+    <Compile Include="CoursePlan.cs" />
+    <Compile Include="DiscountCoupon.cs" />
+    <Compile Include="Education.cs" />
+    <Compile Include="EducationCredential.cs" />
+    <Compile Include="EducationFormat.cs" />
+    <Compile Include="EnterprisePackageRegister.cs" />
+    <Compile Include="Evaluation.cs" />
+    <Compile Include="Exam.cs" />
+    <Compile Include="Faculty.cs" />
+    <Compile Include="FAQ.cs" />
+    <Compile Include="FAQCategory.cs" />
+    <Compile Include="HomeContent.cs" />
+    <Compile Include="IndustryResearch.cs" />
+    <Compile Include="News.cs" />
+    <Compile Include="NewsLetter.cs" />
+    <Compile Include="OrganizationContact.cs" />
+    <Compile Include="Paged\AboutUs.cs" />
+    <Compile Include="Paged\Accreditor.cs" />
+    <Compile Include="Paged\BillingAddress.cs" />
+    <Compile Include="Paged\CertificationTitleOption.cs" />
+    <Compile Include="Paged\Client.cs" />
+    <Compile Include="Paged\College.cs" />
+    <Compile Include="Paged\CoursePlan.cs" />
+    <Compile Include="Paged\DiscountCoupan.cs" />
+    <Compile Include="Paged\Education.cs" />
+    <Compile Include="Paged\EducationFormat.cs" />
+    <Compile Include="Paged\EducationModule.cs" />
+    <Compile Include="Paged\EducationNewsSearch.cs" />
+    <Compile Include="Paged\EducationProfession.cs" />
+    <Compile Include="Paged\EnterpriseDetail.cs" />
+    <Compile Include="Paged\EnterprisePackageRegisters.cs" />
+    <Compile Include="Paged\Evaluation.cs" />
+    <Compile Include="Paged\EvaluationQuestion.cs" />
+    <Compile Include="Paged\Events.cs" />
+    <Compile Include="Paged\Exam.cs" />
+    <Compile Include="Paged\ExamQuestion.cs" />
+    <Compile Include="Paged\Faculties.cs" />
+    <Compile Include="Paged\FAQ.cs" />
+    <Compile Include="Paged\LogSessionDetail.cs" />
+    <Compile Include="Paged\MyEducation.cs" />
+    <Compile Include="Paged\MyEducationAccountHistory.cs" />
+    <Compile Include="Paged\News.cs" />
+    <Compile Include="Paged\NewsFullDetail.cs" />
+    <Compile Include="Paged\Plan.cs" />
+    <Compile Include="Paged\PlanGrid.cs" />
+    <Compile Include="Paged\PreTest.cs" />
+    <Compile Include="Paged\PreTestQuestion.cs" />
+    <Compile Include="Paged\Product.cs" />
+    <Compile Include="Paged\ProductPurchasesRecord.cs" />
+    <Compile Include="Paged\ProductPurchaseDetail.cs" />
+    <Compile Include="Paged\ProductQuantityDetail.cs" />
+    <Compile Include="Paged\ProductShippingDetail.cs" />
+    <Compile Include="Paged\Profession.cs" />
+    <Compile Include="Paged\ShippingAddress.cs" />
+    <Compile Include="Paged\ShippingPayment.cs" />
+    <Compile Include="Paged\SuggestCourses.cs" />
+    <Compile Include="Paged\User.cs" />
+    <Compile Include="Paged\UserCardDetail.cs" />
+    <Compile Include="Paged\UserPlan.cs" />
+    <Compile Include="Paged\UserMenuGroup.cs" />
+    <Compile Include="Plan.cs" />
+    <Compile Include="PlanGrid.cs" />
+    <Compile Include="PlanPackages.cs" />
+    <Compile Include="PreTest.cs" />
+    <Compile Include="PrivacyPolicy.cs" />
+    <Compile Include="ProductPurchase.cs" />
+    <Compile Include="ProductShippingAddressDetailByID.cs" />
+    <Compile Include="Profession.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SuggestCourses.cs" />
+    <Compile Include="TrainingAndSeminar.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="UserPlan.cs" />
+    <Compile Include="UserSubscription.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HCRGUniversity.Core.Data.Model\HCRGUniversity.Core.Data.Model.csproj">
+      <Project>{5623fb8d-3d06-4b24-b332-48f268bcbb13}</Project>
+      <Name>HCRGUniversity.Core.Data.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

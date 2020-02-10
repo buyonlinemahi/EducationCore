@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7AA8DE20-EA28-4C21-80E8-223D442FEA3A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CoreBusinessTierTest</RootNamespace>
+    <AssemblyName>CoreBusinessTierTest</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Library\External\EntityFramework\6.0\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\..\..\..\Library\External\EntityFramework\6.0\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Omu.ValueInjecter">
+      <HintPath>..\..\..\..\Library\External\ValueInjecter\2.1\Omu.ValueInjecter.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+  <ItemGroup>
+    <Compile Include="AboutUsTest.cs" />
+    <Compile Include="BillingShippindAddressTest.cs" />
+    <Compile Include="CarouselSetUpTest.cs" />
+    <Compile Include="CertificationTitleOptionTest.cs" />
+    <Compile Include="ClientTest.cs" />
+    <Compile Include="CollegeTest.cs" />
+    <Compile Include="CoommonTest.cs" />
+    <Compile Include="SuggestCourseTest.cs" />
+    <Compile Include="DiscountCouponTest.cs" />
+    <Compile Include="EducationCredentialTest.cs" />
+    <Compile Include="EducationFormatAvialableTest.cs" />
+    <Compile Include="EducationFormatTest.cs" />
+    <Compile Include="EducationModuleTest.cs" />
+    <Compile Include="EducationProfessionTest.cs" />
+    <Compile Include="EducationShoppingTempTest.cs" />
+    <Compile Include="EducationShoppingTest.cs" />
+    <Compile Include="EducationTest.cs" />
+    <Compile Include="ExamInternalTest.cs" />
+    <Compile Include="ExamQuestionTest.cs" />
+    <Compile Include="FacultyTest.cs" />
+    <Compile Include="FAQTest.cs" />
+    <Compile Include="LogSessionTest.cs" />
+    <Compile Include="MenuTest.cs" />
+    <Compile Include="MyEducationTest.cs" />
+    <Compile Include="NewsPhotoTest.cs" />
+    <Compile Include="NewsSectionTest.cs" />
+    <Compile Include="NewsTest.cs" />
+    <Compile Include="NewsVideoTest.cs" />
+    <Compile Include="OrganizationTest.cs" />
+    <Compile Include="PlanTest.cs" />
+    <Compile Include="ProductShippingDetailTest.cs" />
+    <Compile Include="ProductTest.cs" />
+    <Compile Include="ProfessionTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResourseTest.cs" />
+    <Compile Include="ShippingPaymentTest.cs" />
+    <Compile Include="UserSubscriptionTest.cs" />
+    <Compile Include="UserTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core.Base.Data.SqlServer\Core.Base.Data.SqlServer.csproj">
+      <Project>{d6028b67-70fb-4960-99c8-e4e69923be4e}</Project>
+      <Name>Core.Base.Data.SqlServer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Core.Base.Data\Core.Base.Data.csproj">
+      <Project>{dcd06438-4464-466e-851e-946bbe672694}</Project>
+      <Name>Core.Base.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HCRGUniversity.Core.BL.Implementation\HCRGUniversity.Core.BL.Implementation.csproj">
+      <Project>{5ea47fd8-2869-4d6c-95ef-d41d65e2d609}</Project>
+      <Name>HCRGUniversity.Core.BL.Implementation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HCRGUniversity.Core.BL.Model\HCRGUniversity.Core.BL.Model.csproj">
+      <Project>{02c07b1b-b924-4bb2-81ff-77f7657254db}</Project>
+      <Name>HCRGUniversity.Core.BL.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HCRGUniversity.Core.BL\HCRGUniversity.Core.BL.csproj">
+      <Project>{52b0cd4b-1ba7-4b95-8b1f-6ca74d51711b}</Project>
+      <Name>HCRGUniversity.Core.BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HCRGUniversity.Core.Data.Model\HCRGUniversity.Core.Data.Model.csproj">
+      <Project>{5623fb8d-3d06-4b24-b332-48f268bcbb13}</Project>
+      <Name>HCRGUniversity.Core.Data.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HCRGUniversity.Core.Data.SqlServer\HCRGUniversity.Core.Data.SqlServer.csproj">
+      <Project>{cd39f831-6aeb-4321-89aa-463da7939581}</Project>
+      <Name>HCRGUniversity.Core.Data.SqlServer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HCRGUniversity.Core.Data\HCRGUniversity.Core.Data.csproj">
+      <Project>{f5eae2b1-5650-4564-b3b3-f2d1f17f9c41}</Project>
+      <Name>HCRGUniversity.Core.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

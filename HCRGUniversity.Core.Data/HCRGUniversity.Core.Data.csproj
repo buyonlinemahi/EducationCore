@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F5EAE2B1-5650-4564-B3B3-F2D1F17F9C41}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HCRGUniversity.Core.Data</RootNamespace>
+    <AssemblyName>HCRGUniversity.Core.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IAccreditationRepository.cs" />
+    <Compile Include="IBillingAddressRepository.cs" />
+    <Compile Include="ICertificationRepository.cs" />
+    <Compile Include="ICertificationTitleOptionRepository.cs" />
+    <Compile Include="IClientTypeRepository.cs" />
+    <Compile Include="IOrganizationContactRepository.cs" />
+    <Compile Include="ICoursePlanRepository.cs" />
+    <Compile Include="IDeliveryTermRepository.cs" />
+    <Compile Include="IEnterpriseRepository.cs" />
+    <Compile Include="IIndustryRepository.cs" />
+    <Compile Include="ILogSessionRepository.cs" />
+    <Compile Include="IMenuRepository.cs" />
+    <Compile Include="INewsLetterRepository.cs" />
+    <Compile Include="IClientRepository.cs" />
+    <Compile Include="IOrganizationRepository.cs" />
+    <Compile Include="IPlanRepository.cs" />
+    <Compile Include="IProductQuantityRepository.cs" />
+    <Compile Include="IProductShippingDetailRepository.cs" />
+    <Compile Include="IProductShoppingRepository.cs" />
+    <Compile Include="IProductShoppingTempRepository.cs" />
+    <Compile Include="IReturnPolicyRepository.cs" />
+    <Compile Include="IShippingAddressRepository.cs" />
+    <Compile Include="IShippingMethodRepository.cs" />
+    <Compile Include="IShippingPaymentRepository.cs" />
+    <Compile Include="IStateRepository.cs" />
+    <Compile Include="ISuggestCourseRepository.cs" />
+    <Compile Include="ITermsConditionRepository.cs" />
+    <Compile Include="IPrivacyPolicyRepository.cs" />
+    <Compile Include="IProductRepository.cs" />
+    <Compile Include="ITrainingAndSeminarRepository.cs" />
+    <Compile Include="IUserAllAccessPassRepository.cs" />
+    <Compile Include="IUserCardDetailRepository.cs" />
+    <Compile Include="IEnterprisePackageRegisterRepository.cs" />
+    <Compile Include="IUserPlanRepository.cs" />
+    <Compile Include="IUserMenuGroupRepository.cs" />
+    <Compile Include="IUserMenuPermissionRepository.cs" />
+    <Compile Include="IUserResetPasswordRepository.cs" />
+    <Compile Include="IAccreditorRepository.cs" />
+    <Compile Include="ICarouselSetUpRepository.cs" />
+    <Compile Include="ICollegeEducationRepository.cs" />
+    <Compile Include="IDiscountCouponRepository.cs" />
+    <Compile Include="IEducationCredentialRepository.cs" />
+    <Compile Include="IEducationDetailPageRepository.cs" />
+    <Compile Include="IEducationEvaluationRepository.cs" />
+    <Compile Include="IEducationExamQuestionRepository.cs" />
+    <Compile Include="IEducationModuleFileRepository.cs" />
+    <Compile Include="IEducationModuleRepository.cs" />
+    <Compile Include="IEducationPreTestQuestionRepository.cs" />
+    <Compile Include="IEducationShoppingRepository.cs" />
+    <Compile Include="IEducationShoppingTempRepository.cs" />
+    <Compile Include="IEducationTypesAvailableRepository.cs" />
+    <Compile Include="IAboutUsRepository.cs" />
+    <Compile Include="ICollegeRepository.cs" />
+    <Compile Include="IEducationFormatRepository.cs" />
+    <Compile Include="IEducationFormatAvailableRepository.cs" />
+    <Compile Include="IEducationProfessionRepository.cs" />
+    <Compile Include="IEducationRepository.cs" />
+    <Compile Include="IEvaluationAnswerRepository.cs" />
+    <Compile Include="IEvaluationQuestionRepository.cs" />
+    <Compile Include="IEvaluationQuestionResultRepository.cs" />
+    <Compile Include="IEvaluationRepository.cs" />
+    <Compile Include="IEvaluationResultRepository.cs" />
+    <Compile Include="IEventRepository.cs" />
+    <Compile Include="IExamQuestionRepository.cs" />
+    <Compile Include="IExamQuestionResultRepository.cs" />
+    <Compile Include="IExamRepository.cs" />
+    <Compile Include="IExamResultRepository.cs" />
+    <Compile Include="IFacultyRepository.cs" />
+    <Compile Include="IFAQCategoryRepository.cs" />
+    <Compile Include="IFAQRepository.cs" />
+    <Compile Include="IFileTypeRepository.cs" />
+    <Compile Include="IHomeContentRepository.cs" />
+    <Compile Include="IIndustryResearchRepository.cs" />
+    <Compile Include="IMyEducationModuleRepository.cs" />
+    <Compile Include="IMyEducationRepository.cs" />
+    <Compile Include="INewsPhotoRepository.cs" />
+    <Compile Include="INewsRepository.cs" />
+    <Compile Include="INewsSectionRepository.cs" />
+    <Compile Include="INewsVideoRepository.cs" />
+    <Compile Include="IOrderRepository.cs" />
+    <Compile Include="IPreTestQuestionRepository.cs" />
+    <Compile Include="IPreTestQuestionResultRepository.cs" />
+    <Compile Include="IPreTestRepository.cs" />
+    <Compile Include="IPreTestResultRepository.cs" />
+    <Compile Include="IProfessionRepository.cs" />
+    <Compile Include="IResourceRepository.cs" />
+    <Compile Include="IUserRepository.cs" />
+    <Compile Include="IUserSubscriptionRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core.Base.Data\Core.Base.Data.csproj">
+      <Project>{dcd06438-4464-466e-851e-946bbe672694}</Project>
+      <Name>Core.Base.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HCRGUniversity.Core.BL.Model\HCRGUniversity.Core.BL.Model.csproj">
+      <Project>{02c07b1b-b924-4bb2-81ff-77f7657254db}</Project>
+      <Name>HCRGUniversity.Core.BL.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HCRGUniversity.Core.Data.Model\HCRGUniversity.Core.Data.Model.csproj">
+      <Project>{5623fb8d-3d06-4b24-b332-48f268bcbb13}</Project>
+      <Name>HCRGUniversity.Core.Data.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

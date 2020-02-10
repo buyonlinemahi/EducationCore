@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CD39F831-6AEB-4321-89AA-463DA7939581}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HCRGUniversity.Core.Data.SqlServer</RootNamespace>
+    <AssemblyName>HCRGUniversity.Core.Data.SqlServer</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Library\External\EntityFramework\6.0\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\..\..\..\Library\External\EntityFramework\6.0\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configuration\CertificationConfiguration.cs" />
+    <Compile Include="Configuration\CertificationTitleOptionConfiguration.cs" />
+    <Compile Include="Configuration\ClientTypeConfiguration.cs" />
+    <Compile Include="Configuration\OrganizationContactConfiguration.cs" />
+    <Compile Include="Configuration\CoursePlanConfiguration.cs" />
+    <Compile Include="Configuration\UserMenuGroupConfiguration.cs" />
+    <Compile Include="Configuration\EnterpriseConfiguration.cs" />
+    <Compile Include="Configuration\IndustryConfiguration.cs" />
+    <Compile Include="Configuration\MenuConfiguration.cs" />
+    <Compile Include="Configuration\OrganizationConfiguration.cs" />
+    <Compile Include="Configuration\PlanConfiguration.cs" />
+    <Compile Include="Configuration\ProductQuantityConfiguration.cs" />
+    <Compile Include="Configuration\ProductShippingDetailConfiguration.cs" />
+    <Compile Include="Configuration\ShippingMethodConfiguration.cs" />
+    <Compile Include="Configuration\ShippingPaymentConfiguration.cs" />
+    <Compile Include="Configuration\StateConfiguration.cs" />
+    <Compile Include="Configuration\SuggestCourseConfiguration.cs" />
+    <Compile Include="Configuration\UserAllAccessPassConfiguration.cs" />
+    <Compile Include="Configuration\EnterprisePackageRegisterConfiguration.cs" />
+    <Compile Include="Configuration\UserPlanConfiguration.cs" />
+    <Compile Include="Configuration\UserMenuPermissionConfiguration.cs" />
+    <Compile Include="Configuration\UserSubscriptionConfiguration.cs" />
+    <Compile Include="Configuration\ClientConfiguration.cs" />
+    <Compile Include="Repository\CoursePlanRepository.cs" />
+    <Compile Include="Repository\UserMenuPermissionRepository.cs" />
+    <Compile Include="Repository\UserMenuGroupRepository.cs" />
+    <Compile Include="Repository\MenuRepository.cs" />
+    <Compile Include="Repository\BillingAddressRepository.cs" />
+    <Compile Include="Configuration\AccreditationConfiguration.cs" />
+    <Compile Include="Configuration\AccreditorConfiguration.cs" />
+    <Compile Include="Configuration\AboutUsConfiguration.cs" />
+    <Compile Include="Configuration\BillingAddressConfiguration.cs" />
+    <Compile Include="Configuration\CarouselSetUpConfiguration.cs" />
+    <Compile Include="Configuration\CollegeConfiguration.cs" />
+    <Compile Include="Configuration\CollegeEducationConfiguration.cs" />
+    <Compile Include="Configuration\DeliveryTermConfiguration.cs" />
+    <Compile Include="Configuration\DiscountCouponConfiguration.cs" />
+    <Compile Include="Configuration\EducationCredentialConfiguration.cs" />
+    <Compile Include="Configuration\EducationDetailPageConfiguration.cs" />
+    <Compile Include="Configuration\EducationEvaluationConfiguration.cs" />
+    <Compile Include="Configuration\EducationExamQuestionConfiguration.cs" />
+    <Compile Include="Configuration\EducationModuleConfiguration.cs" />
+    <Compile Include="Configuration\EducationModuleFileConfiguration.cs" />
+    <Compile Include="Configuration\EducationPreTestQuestionConfiguration.cs" />
+    <Compile Include="Configuration\EducationShoppingConfiguration.cs" />
+    <Compile Include="Configuration\EducationShoppingTempConfiguration.cs" />
+    <Compile Include="Configuration\EducationTypesAvailableConfiguration.cs" />
+    <Compile Include="Configuration\EducationConfiguration.cs" />
+    <Compile Include="Configuration\EducationFormatAvailableConfiguration.cs" />
+    <Compile Include="Configuration\EducationFormatConfiguration.cs" />
+    <Compile Include="Configuration\EducatoinProfessionConfiguration.cs" />
+    <Compile Include="Configuration\EvaluationAnswerConfiguration.cs" />
+    <Compile Include="Configuration\EvaluationConfiguration.cs" />
+    <Compile Include="Configuration\EvaluationQuestionConfiguration.cs" />
+    <Compile Include="Configuration\EvaluationQuestionResultConfiguration.cs" />
+    <Compile Include="Configuration\EvaluationResultConfiguration.cs" />
+    <Compile Include="Configuration\EventConfiguration.cs" />
+    <Compile Include="Configuration\ExamConfiguration.cs" />
+    <Compile Include="Configuration\ExamQuestionConfiguration.cs" />
+    <Compile Include="Configuration\ExamQuestionResultConfiguration.cs" />
+    <Compile Include="Configuration\ExamResultConfiguration.cs" />
+    <Compile Include="Configuration\FacultyConfiguration.cs" />
+    <Compile Include="Configuration\FAQCategoryConfiguration.cs" />
+    <Compile Include="Configuration\FAQConfiguration.cs" />
+    <Compile Include="Configuration\FileTypeConfiguration.cs" />
+    <Compile Include="Configuration\HomeContentConfiguration.cs" />
+    <Compile Include="Configuration\IndustryResearchConfiguration.cs" />
+    <Compile Include="Configuration\LogSessionConfiguration.cs" />
+    <Compile Include="Configuration\MyEducationModuleConfiguration.cs" />
+    <Compile Include="Configuration\MyEducationConfiguration.cs" />
+    <Compile Include="Configuration\NewsConfiguration.cs" />
+    <Compile Include="Configuration\NewsLetterConfiguration.cs" />
+    <Compile Include="Configuration\NewsPhotoConfiguration.cs" />
+    <Compile Include="Configuration\NewsSectionConfiguration.cs" />
+    <Compile Include="Configuration\NewsVideoConfiguration.cs" />
+    <Compile Include="Configuration\OrderConfiguration.cs" />
+    <Compile Include="Configuration\ProductShoppingConfiguration.cs" />
+    <Compile Include="Configuration\ProductShoppingTempConfiguration.cs" />
+    <Compile Include="Configuration\ReturnPolicyConfiguration.cs" />
+    <Compile Include="Configuration\ShippingAddressConfiguration.cs" />
+    <Compile Include="Configuration\TermsConditionConfiguration.cs" />
+    <Compile Include="Configuration\PreTestConfiguration.cs" />
+    <Compile Include="Configuration\PreTestQuestionConfiguration.cs" />
+    <Compile Include="Configuration\PreTestQuestionResultConfiguration.cs" />
+    <Compile Include="Configuration\PreTestResultsConfiguration.cs" />
+    <Compile Include="Configuration\PrivacyPolicyConfiguration.cs" />
+    <Compile Include="Configuration\ProductConfiguration.cs" />
+    <Compile Include="Configuration\ProfessionConfiguration.cs" />
+    <Compile Include="Configuration\ResourceConfiguration.cs" />
+    <Compile Include="Configuration\UserCardDetailConfiguration.cs" />
+    <Compile Include="Configuration\UserConfiguration.cs" />
+    <Compile Include="Configuration\UserResetPasswordConfiguration.cs" />
+    <Compile Include="HCRGUniversityDBContext.cs" />
+    <Compile Include="Constant\Consts.cs" />
+    <Compile Include="Constant\SPNames.cs" />
+    <Compile Include="Constant\Tables.cs" />
+    <Compile Include="Constant\Views.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\AboutUsRepository.cs" />
+    <Compile Include="Repository\AccreditationRepository.cs" />
+    <Compile Include="Repository\AccreditorRepository.cs" />
+    <Compile Include="Repository\CarouselSetUpRepository.cs" />
+    <Compile Include="Repository\CertificationRepository.cs" />
+    <Compile Include="Repository\CertificationTitleOptionRepository.cs" />
+    <Compile Include="Repository\ClientTypeRepository.cs" />
+    <Compile Include="Repository\CollegeEducationRepository.cs" />
+    <Compile Include="Repository\CollegeRepository.cs" />
+    <Compile Include="Repository\OrganizationContactRepository.cs" />
+    <Compile Include="Repository\DeliveryTermRepository.cs" />
+    <Compile Include="Repository\DiscountCouponRepository.cs" />
+    <Compile Include="Repository\EducationCredentialRepository.cs" />
+    <Compile Include="Repository\EducationDetailPageRepository.cs" />
+    <Compile Include="Repository\EducationEvaluationRepository.cs" />
+    <Compile Include="Repository\EducationExamQuestionRepository.cs" />
+    <Compile Include="Repository\EducationFormatAvialableRepository.cs" />
+    <Compile Include="Repository\EducationFormatRepository.cs" />
+    <Compile Include="Repository\EducationModuleFileRepository.cs" />
+    <Compile Include="Repository\EducationModuleRepository.cs" />
+    <Compile Include="Repository\EducationPreTestQuestionRepository.cs" />
+    <Compile Include="Repository\EducationProfessionRepository.cs" />
+    <Compile Include="Repository\EducationRepository.cs" />
+    <Compile Include="Repository\EducationShoppingRepository.cs" />
+    <Compile Include="Repository\EducationShoppingTempRepository.cs" />
+    <Compile Include="Repository\EducationTypesAvailableRepository.cs" />
+    <Compile Include="Repository\EnterpriseRepository.cs" />
+    <Compile Include="Repository\EvaluationAnswerRepository.cs" />
+    <Compile Include="Repository\EvaluationQuestionRepository.cs" />
+    <Compile Include="Repository\EvaluationQuestionResultRepository.cs" />
+    <Compile Include="Repository\EvaluationRepository.cs" />
+    <Compile Include="Repository\EvaluationResultRepository.cs" />
+    <Compile Include="Repository\EventRepository.cs" />
+    <Compile Include="Repository\ExamQuestionRepository.cs" />
+    <Compile Include="Repository\ExamQuestionResultRepository.cs" />
+    <Compile Include="Repository\ExamRepository.cs" />
+    <Compile Include="Repository\ExamResultRepository.cs" />
+    <Compile Include="Repository\FacultyRepository.cs" />
+    <Compile Include="Repository\FAQCategoryRepository.cs" />
+    <Compile Include="Repository\FAQRepository.cs" />
+    <Compile Include="Repository\FileTypeRepository.cs" />
+    <Compile Include="Repository\HomeContentRepository.cs" />
+    <Compile Include="Repository\IndustryRepository.cs" />
+    <Compile Include="Repository\IndustryResearchRepository.cs" />
+    <Compile Include="Repository\LogSessionRepository.cs" />
+    <Compile Include="Repository\MyEducationModuleRepository.cs" />
+    <Compile Include="Repository\MyEducationRepository.cs" />
+    <Compile Include="Repository\NewsLetterRepository.cs" />
+    <Compile Include="Repository\NewsPhotoRepository.cs" />
+    <Compile Include="Repository\NewsRepository.cs" />
+    <Compile Include="Repository\NewsSectionRepository.cs" />
+    <Compile Include="Repository\NewsVideoRepository.cs" />
+    <Compile Include="Repository\OrderRepository.cs" />
+    <Compile Include="Repository\ClientRepository.cs" />
+    <Compile Include="Repository\OrganizationRepository.cs" />
+    <Compile Include="Repository\PlanRepository.cs" />
+    <Compile Include="Repository\ProductQuantityRepository.cs" />
+    <Compile Include="Repository\ProductShippingDetailRepository.cs" />
+    <Compile Include="Repository\ProductShoppingRepository.cs" />
+    <Compile Include="Repository\ProductShoppingTempRepository.cs" />
+    <Compile Include="Repository\ReturnPolicyRepository.cs" />
+    <Compile Include="Repository\ShippingMethodRepository.cs" />
+    <Compile Include="Repository\ShippingPaymentRepository.cs" />
+    <Compile Include="Repository\StateRepository.cs" />
+    <Compile Include="Repository\SuggestCourseRepository.cs" />
+    <Compile Include="Repository\TermsConditionRepository.cs" />
+    <Compile Include="Repository\PreTestQuestionRepository.cs" />
+    <Compile Include="Repository\PreTestQuestionResultRepository.cs" />
+    <Compile Include="Repository\PreTestRepository.cs" />
+    <Compile Include="Repository\PreTestResultRepository.cs" />
+    <Compile Include="Repository\PrivacyPolicyRepository.cs" />
+    <Compile Include="Repository\ProductRepository.cs" />
+    <Compile Include="Repository\ProfessionRepository.cs" />
+    <Compile Include="Repository\ResourseRepository.cs" />
+    <Compile Include="Repository\UserAllAccessPassRepository.cs" />
+    <Compile Include="Repository\UserCardDetailRepository.cs" />
+    <Compile Include="Repository\EnterprisePackageRegisterRepository.cs" />
+    <Compile Include="Repository\UserPlanRepository.cs" />
+    <Compile Include="Repository\UserRepository.cs" />
+    <Compile Include="Repository\UserResetPasswordRepository.cs" />
+    <Compile Include="Configuration\TrainingAndSeminarConfiguration.cs" />
+    <Compile Include="Repository\TrainingAndSeminarRepository.cs" />
+    <Compile Include="Repository\ShippingAddressRepository.cs" />
+    <Compile Include="Repository\UserSubscriptionRepository.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Core.Base.Data.SqlServer\Core.Base.Data.SqlServer.csproj">
+      <Project>{d6028b67-70fb-4960-99c8-e4e69923be4e}</Project>
+      <Name>Core.Base.Data.SqlServer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Core.Base.Data\Core.Base.Data.csproj">
+      <Project>{dcd06438-4464-466e-851e-946bbe672694}</Project>
+      <Name>Core.Base.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HCRGUniversity.Core.BL.Model\HCRGUniversity.Core.BL.Model.csproj">
+      <Project>{02c07b1b-b924-4bb2-81ff-77f7657254db}</Project>
+      <Name>HCRGUniversity.Core.BL.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HCRGUniversity.Core.Data.Model\HCRGUniversity.Core.Data.Model.csproj">
+      <Project>{5623fb8d-3d06-4b24-b332-48f268bcbb13}</Project>
+      <Name>HCRGUniversity.Core.Data.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HCRGUniversity.Core.Data\HCRGUniversity.Core.Data.csproj">
+      <Project>{f5eae2b1-5650-4564-b3b3-f2d1f17f9c41}</Project>
+      <Name>HCRGUniversity.Core.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

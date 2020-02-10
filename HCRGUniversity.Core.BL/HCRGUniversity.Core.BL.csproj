@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{52B0CD4B-1BA7-4B95-8B1F-6CA74D51711B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HCRGUniversity.Core.BL</RootNamespace>
+    <AssemblyName>HCRGUniversity.Core.BL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IClientType.cs" />
+    <Compile Include="IAboutUs.cs" />
+    <Compile Include="IBillingAddress.cs" />
+    <Compile Include="ICarouselSetUp.cs" />
+    <Compile Include="ICertificationTitleOption.cs" />
+    <Compile Include="ICollege.cs" />
+    <Compile Include="IOrganizationContact.cs" />
+    <Compile Include="IDiscountCoupon.cs" />
+    <Compile Include="IEducation.cs" />
+    <Compile Include="IEducationCredential.cs" />
+    <Compile Include="IEducationFormat.cs" />
+    <Compile Include="IEducationFormatAvailable.cs" />
+    <Compile Include="IEducationModule.cs" />
+    <Compile Include="IEducationModuleFile.cs" />
+    <Compile Include="IEducationProfession.cs" />
+    <Compile Include="IEducationShopping.cs" />
+    <Compile Include="IEducationShoppingTemp.cs" />
+    <Compile Include="IEnterprise.cs" />
+    <Compile Include="IExamInternal.cs" />
+    <Compile Include="IExamQuestion.cs" />
+    <Compile Include="IFaculty.cs" />
+    <Compile Include="IFAQ.cs" />
+    <Compile Include="IFileType.cs" />
+    <Compile Include="IIndustry.cs" />
+    <Compile Include="ILogSession.cs" />
+    <Compile Include="IMenu.cs" />
+    <Compile Include="IMyEducation.cs" />
+    <Compile Include="INews.cs" />
+    <Compile Include="INewsPhoto.cs" />
+    <Compile Include="INewsSection.cs" />
+    <Compile Include="INewsVideo.cs" />
+    <Compile Include="IClient.cs" />
+    <Compile Include="IOrganization.cs" />
+    <Compile Include="IPlan.cs" />
+    <Compile Include="IProduct.cs" />
+    <Compile Include="IProductShippingDetail.cs" />
+    <Compile Include="IProfession.cs" />
+    <Compile Include="IResource.cs" />
+    <Compile Include="IShippingAddress.cs" />
+    <Compile Include="IShippingMethod.cs" />
+    <Compile Include="IShippingPayment.cs" />
+    <Compile Include="IState.cs" />
+    <Compile Include="ISuggestCourse.cs" />
+    <Compile Include="IUser.cs" />
+    <Compile Include="IUserAllAccessPass.cs" />
+    <Compile Include="IUserCardDetail.cs" />
+    <Compile Include="IEnterprisePackageRegister.cs" />
+    <Compile Include="IUserSubscription.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HCRGUniversity.Core.BL.Model\HCRGUniversity.Core.BL.Model.csproj">
+      <Project>{02c07b1b-b924-4bb2-81ff-77f7657254db}</Project>
+      <Name>HCRGUniversity.Core.BL.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HCRGUniversity.Core.Data.Model\HCRGUniversity.Core.Data.Model.csproj">
+      <Project>{5623fb8d-3d06-4b24-b332-48f268bcbb13}</Project>
+      <Name>HCRGUniversity.Core.Data.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

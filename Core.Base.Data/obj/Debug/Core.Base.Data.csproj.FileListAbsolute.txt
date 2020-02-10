@@ -1,0 +1,5 @@
+D:\Mahi_TFS\Education\Core\HCRGUniversityCore\Core.Base.Data\bin\Debug\Core.Base.Data.dll
+D:\Mahi_TFS\Education\Core\HCRGUniversityCore\Core.Base.Data\bin\Debug\Core.Base.Data.pdb
+D:\Mahi_TFS\Education\Core\HCRGUniversityCore\Core.Base.Data\bin\Debug\EntityFramework.dll
+D:\Mahi_TFS\Education\Core\HCRGUniversityCore\Core.Base.Data\obj\Debug\Core.Base.Data.dll
+D:\Mahi_TFS\Education\Core\HCRGUniversityCore\Core.Base.Data\obj\Debug\Core.Base.Data.pdb
